@@ -1,9 +1,11 @@
 *{
     font-family: sans-serif;
+    color: white;
 }
 body{
     margin: 0 0;
     padding: 0 0;
+    background-color: rgb(41, 41, 41);
 }
 .main{
     width: 100%;
@@ -32,6 +34,7 @@ body{
 .fa-bars{
     background-color: rgb(82, 186, 133) !important;
     height: 6% !important;
+    color: rgb(41, 41, 41) !important;
 }
 .img{
     float: left;
