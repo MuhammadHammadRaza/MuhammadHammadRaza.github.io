@@ -131,14 +131,20 @@ let editUser = (e) => {
     var users = JSON.parse(localStorage.getItem("users"));
     var edit = prompt(`Enter New Detail`, user[e]);
 
-    for (var i = 0; i < users.length; i++) {
-        if (users[i][e] == user[e]) {
 
+    // var i = users.findIndex(user)
+    // user[e] = edit;
+    // users[i][e] = user[e];
+    // localStorage.setItem("users", JSON.stringify(users));
+    // localStorage.setItem("user", JSON.stringify(user));
+
+
+    for (var i = 0; i < users.length; i++) {       
+        if (JSON.stringify(users[i]) == JSON.stringify(user)) {
             user[e] = edit;
             users[i][e] = user[e];
             localStorage.setItem("users", JSON.stringify(users));
             localStorage.setItem("user", JSON.stringify(user));
-            break;
         }
     }
     location.href = "index.html"
@@ -165,7 +171,7 @@ let onPostCreation = () => {
         message.innerHTML = "All Fields Required";
         message.classList.add("bg-danger");
     }
- 
+
     setTimeout(() => {
         message.innerText = "Post";
         message.classList.remove("bg-danger");
