@@ -103,6 +103,8 @@ let q3 = _ => {
     console.log(obj1);
     console.log(obj2);
     console.log(obj3);
+    let text = document.getElementsByTagName("body")[0].appendChild(document.createElement("h2"));
+    text.innerHTML = "Open console to see results"
 }
 
 
