@@ -160,7 +160,7 @@ let onPostCreation = () => {
         var postCardMain = document.getElementById("postCard");
         postCardMain.setAttribute("class", "d-flex flex-column-reverse bd-highlight");
         postCardList = postCardMain.appendChild(document.createElement("div"))
-        postCardList.innerHTML = `<div class="w-25 mt-3 mx-auto card mb-3"><button type="button" class="position-absolute top-0 end-0 btn-close" onclick="deleteItem(this)"></button><img src="./images/signin-image.jpg" class="card-img-top" id="img"><div class="card-body"><h5 class="card-title">${title.value}</h5><p class="card-text">${desc.value}</p></div></div>`
+        postCardList.innerHTML = `<div class="mt-3 mx-auto card mb-3"><button type="button" class="position-absolute top-0 end-0 btn-close" onclick="deleteItem(this)"></button><img src="./images/signin-image.jpg" class="card-img-top" id="img"><div class="card-body"><h5 class="card-title">${title.value}</h5><p class="card-text">${desc.value}</p></div></div>`
 
         title.value = "";
         desc.value = "";

@@ -678,11 +678,17 @@ label.valid:after {
   .container {
     max-width: 1200px;
   }
+  .card{
+    width: 25%;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .offcanvas{
     width: 50% !important;
+  }
+  .card{
+    width: 50%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -740,13 +746,15 @@ label.valid:after {
   }
   .form-title {
     text-align: center;
-  }
-  
+  }  
 }
 
 @media screen and (max-width: 576px) {
   .offcanvas{
     width: 100% !important;
+  }
+  .card{
+    width: 75%;
   }
 }
 @media screen and (max-width: 400px) {
