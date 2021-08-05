@@ -7,7 +7,7 @@ paraTag.style.display = "inline"
 var text = "I am Muhammad Hammad Raza, a Certified Microsoft Technology Associate. ";
 
 var anchorTag = body.appendChild(document.createElement("a"));
-anchorTag.setAttribute("href", "../images/Cert8235272115.pdf");
+anchorTag.setAttribute("href", "./cert/Cert8235272115.pdf");
 anchorTag.setAttribute("target", "_blank");
 anchorTag.style.color = "teal";
 var attachmentTag = anchorTag.appendChild(document.createElement("h3"));;
